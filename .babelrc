@@ -1,0 +1,7 @@
+// Configuration file for Babel
+// (Babel transpiles code to work with older browsers)
+
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["@babel/plugin-transform-runtime"]
+}
