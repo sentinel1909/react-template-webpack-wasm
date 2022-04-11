@@ -1,11 +1,11 @@
 // React app main entry point
 
 import React from "react";
-import ReactDom from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 
 import "./index.css";
 
-const appRoot = document.getElementById("root");
-
-ReactDom.render(<App />, appRoot);
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<App />);
